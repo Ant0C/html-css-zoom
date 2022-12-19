@@ -23,13 +23,12 @@ main{
 .col-7{
     position: relative;
     flex-basis: calc(100% * (2/12));
-    margin-right: 4px;
+    margin-right: 0px;
 }
 
 .container{
-    padding: 30px 30px 30px 10px;
-    max-width: 1200px; 
-    margin: 0 auto;
+    padding: 10px 10px 10px 10px;
+    max-width: 1400px; 
 }
 
 img{
@@ -48,12 +47,17 @@ img{
 
 /* Footer */
 
-footer > .row{
+.footer > .row{
     justify-content: space-between;
 }
 
-footer > i{
-    display: block;
+.col-left,.col-center,.col-right{
+    flex-basis: calc(100%/3);
+}
+
+.footer > .container{
+    height: 50px;
+    background-color: rgb(32, 32, 32);
 }
 
 .col-left{
@@ -62,13 +66,7 @@ footer > i{
 
 .col-right{
     color: red;
-    background-color: rgb(43, 41, 41);
-    padding: 10px;
 }
 
-/* DEBUG RULES */
 
-.debug .footer{
-    height: 100px;
-    background-color: grey;
-}
+
